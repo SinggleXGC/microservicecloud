@@ -80,4 +80,31 @@
         </dependencies>
     </dependencyManagement>
 
+    <!-- 用于配置微服务info构建信息 -->
+    <build>
+        <!-- 项目的名称 -->
+        <finalName>microservicecloud</finalName>
+        <resources>
+            <resource>
+                <!-- 指定配置文件所在位置 -->
+                <directory>src/main/resources</directory>
+                <!-- 表示开启过滤功能 -->
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <!-- 过滤内容配置，这个插件用于解析和解读 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <delimiters>
+                        <!-- 表示解析 上述指定配置目录下 以$开头和结尾的内容 -->
+                        <delimiter>$</delimiter>
+                    </delimiters>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
