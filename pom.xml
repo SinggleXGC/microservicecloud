@@ -100,7 +100,7 @@
                 <configuration>
                     <delimiters>
                         <!-- 表示解析 上述指定配置目录下 以$开头和结尾的内容 -->
-                        <delimiter>$</delimiter>
+                        <delimit>$</delimit>
                     </delimiters>
                 </configuration>
             </plugin>
