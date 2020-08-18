@@ -12,7 +12,7 @@ mybatis:
 # Spring整合
 spring:
   application:
-    name: miroservicecloud-dept
+    name: microservicecloud-dept
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource  # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver   # mysql驱动名
